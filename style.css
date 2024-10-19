@@ -1,0 +1,269 @@
+:root {
+  --color-de-fondo: #FFF1DB;
+  --color-de-fondo-menu: #ffffff;
+  --color-de-link: #000000;
+}
+
+body {
+    
+    color: black;
+    background-color: var(--color-de-fondo);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+
+/* Sección Menú*/
+
+.cabecera {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  .cabecera__logo {
+    width: 50px;
+  }
+  
+  .cabecera__titulo {
+    font-size: 24px; 
+    margin-right: 300px;
+      
+  }
+  
+  .navegacion {
+    display: flex;
+  }
+  
+  .navegacion__lista {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navegacion__elemento {
+    margin-left: 20px;
+  }
+  
+  
+
+/* Sección Presentación*/
+
+.presentacion__foto {
+    display: block;
+    margin: 0 auto;
+  }
+  .presentacion__titulo{
+       
+    margin-left: 10px;
+    margin-right: 10px;
+      
+  }
+
+  
+
+
+/* Sección sobre mí*/
+.sobre-mi__titulo{
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.sobre-mi__texto{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*Sección de Habilidades*/
+
+.habilidades{
+    margin-top: 70px;
+}
+
+.habilidades__titulo{
+    text-align: center;
+}
+
+.habilidades__lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+.habilidades__elemento {
+        flex: 1 0 200px;
+        text-align: center;
+      }
+
+.habilidades__icono {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }     
+
+
+/* Sección de Aficiones*/
+
+.aficiones {
+    margin-top: 70px; 
+  }
+.aficiones__titulo {
+    text-align: center;
+  }
+
+.aficiones__lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; 
+      
+      }
+  
+  .aficiones__elemento {
+    flex: 1 0 200px;
+    text-align: center;
+  }
+  
+  .aficiones__icono {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  /*Seccion Formacion Academica*/
+
+  .formacion {
+  margin-top: 70px;
+}
+  
+.formacion__titulo {
+    margin-bottom: 40px;
+    text-align: center; 
+  }
+  
+  .formacion__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .formacion__elemento {
+    flex: 1 0 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .formacion__icono {
+    width: 50px;
+  }
+  
+  
+
+
+/*Sección de Proyectos*/
+.proyectos__titulo{
+  margin-top: 70px;
+  margin-left: 15px;
+}
+
+.proyectos__contenedor{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
+/*Sección de Contacto*/
+.contacto__titulo{
+  margin: 15px;
+  margin-top: 20px;
+}
+
+.contacto__formulario {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contacto__campo {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contacto__campo--textarea {
+  height: 100px;
+}
+
+
+/*Responsividad*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) { /* Para pantallas con ancho máximo de 768 píxeles */
+    .navegacion__lista {
+      flex-direction: column; /* Ordena los elementos de la lista verticalmente */
+    }
+  
+    .navegacion__elemento {
+      margin-bottom: 10px; /* Agrega margen inferior a cada elemento */
+      margin-left: 0; /* Elimina el margen izquierdo */
+    }
+  }
+  
+  
